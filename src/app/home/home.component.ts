@@ -19,7 +19,7 @@ export interface Tile {
 export class HomeComponent implements OnInit {
 
   tiles: Tile[] = [
-    {text: 'One', cols: 3, rows: 1, color: 'lightblue', img: ''},
+    {text: "An online diary", cols: 3, rows: 1, color: 'lightblue', img: ''},
     {text: 'Two', cols: 1, rows: 2, color: '#cdcdcd', img: ''},
     {text: 'Three', cols: 1, rows: 1, color: 'lightpink', img: ''},
     {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1', img: './assets/img/BrokenRobot.png'},

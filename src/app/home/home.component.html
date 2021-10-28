@@ -1,10 +1,42 @@
 <mat-grid-list cols="4" rowHeight="300px">
+
     <mat-grid-tile
-        *ngFor="let tile of tiles"
-        [colspan]="tile.cols"
-        [rowspan]="tile.rows"
-        [style.background]="tile.color">
-      {{tile.text}}
-      <img src={{tile.img}}>
+
+        [colspan]=3
+        [rowspan]=1
+          
+        >
+        <span style="text-align: left;">
+      <h1>A place for my projects</h1></span>
+      <img src="">
     </mat-grid-tile>
-  </mat-grid-list>
+
+    <mat-grid-tile
+
+        [colspan]=1
+        [rowspan]=2
+
+        >
+      
+      <img src="./assets/img/codeblurred.png" style="object-fit:fill; height: inherit; width: inherit;">
+    </mat-grid-tile>
+
+    <mat-grid-tile
+        [colspan]=1
+        [rowspan]=1
+    >
+     
+      <img src="./assets/img/wireframeterrain.png" style="width:300%; height: auto">
+    </mat-grid-tile>
+
+    <mat-grid-tile
+    [colspan]=2
+    [rowspan]=1
+>
+  
+  <img src="./assets/img/BrokenRobot.png"   class="tile-image">
+</mat-grid-tile>
+
+   
+
+</mat-grid-list>
