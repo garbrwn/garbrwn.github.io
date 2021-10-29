@@ -28,9 +28,13 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/Planets/TemplateData/style.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/Planets/Build/Planets.loader.js"
+            ]
           },
           "configurations": {
             "production": {

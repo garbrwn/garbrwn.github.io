@@ -1,16 +1,18 @@
-<mat-grid-list cols="4" rowHeight="300px">
+<mat-grid-list cols="3" rowHeight="300px">
 
     <mat-grid-tile
 
-        [colspan]=3
+        [colspan]=2
         [rowspan]=1
           
         >
         <span style="text-align: left;">
-      <h1>A place for my projects</h1></span>
+      <h1>Programming projects</h1>
+      <h2>and the art behind it all.</h2></span>
       <img src="">
     </mat-grid-tile>
 
+    <a routerLink="/unity">
     <mat-grid-tile
 
         [colspan]=1
@@ -20,7 +22,9 @@
       <mat-grid-tile-header>C# / .NET / UNITY / ANGULAR</mat-grid-tile-header>
       <!--img src="./assets/img/codeblurred.png" style="object-fit:fill; height: inherit; width: inherit;">-->
     </mat-grid-tile>
+    </a>
 
+    <a routerLink="/procedural">
     <mat-grid-tile
         [colspan]=1
         [rowspan]=1
@@ -29,15 +33,18 @@
     <mat-grid-tile-header>PROCEDURAL GENERATION</mat-grid-tile-header>
       <!--<img src="./assets/img/wireframeterrain.png">-->
     </mat-grid-tile>
+    </a>
 
+    <a routerLink="/blender">
     <mat-grid-tile
-    [colspan]=2
+    [colspan]=1
     [rowspan]=1
     class="four"
 >
 <mat-grid-tile-header>3DCG / BLENDER / SHADERS & MATERIALS / TEXTURING</mat-grid-tile-header>
   <!--<img src="./assets/img/BrokenRobot.png"   class="tile-image">-->
 </mat-grid-tile>
+</a>
 
    
 
