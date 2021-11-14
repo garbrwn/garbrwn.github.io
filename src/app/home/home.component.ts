@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 export interface Tile {
   color: string;
@@ -27,7 +27,13 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  breakpoint : any;
+
   ngOnInit(): void {
+    this.breakpoint = (window.innerWidth <= 500) ? 1 : 3;
   }
 
+  onResize(event: any) {
+    this.breakpoint = (event.target.innerWidth <= 500) ? 1 : 3;
+  }
 }

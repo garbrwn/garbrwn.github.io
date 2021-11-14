@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card'; 
 
 import { HomeComponent } from './home/home.component';
 import { UnityprojectsComponent } from './unityprojects/unityprojects.component';
 import { BlenderprojectsComponent } from './blenderprojects/blenderprojects.component';
 import { ProceduralprojectsComponent } from './proceduralprojects/proceduralprojects.component';
 import { UnityplanetsComponent } from './unityplanets/unityplanets.component';
+import { PostCardComponent } from './post-card/post-card.component';
 
 
 @NgModule({
@@ -22,14 +24,16 @@ import { UnityplanetsComponent } from './unityplanets/unityplanets.component';
     UnityprojectsComponent,
     BlenderprojectsComponent,
     ProceduralprojectsComponent,
-    UnityplanetsComponent
+    UnityplanetsComponent,
+    PostCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatGridListModule
+    MatGridListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

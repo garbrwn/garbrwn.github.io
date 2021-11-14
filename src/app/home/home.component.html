@@ -1,8 +1,8 @@
-<mat-grid-list cols="3" rowHeight="300px">
+<mat-grid-list [cols]="breakpoint" rowHeight="300px" (window:resize)="onResize($event)">
 
     <mat-grid-tile
 
-        [colspan]=2
+        [colspan]="breakpoint > 1 ? '2' : '1'"
         [rowspan]=1
           
         >
@@ -16,7 +16,7 @@
     <mat-grid-tile
 
         [colspan]=1
-        [rowspan]=2
+        [rowspan]="breakpoint > 1 ? '2' : '1'"
         class="two"
         >
       <mat-grid-tile-header>C# / .NET / UNITY / ANGULAR</mat-grid-tile-header>
