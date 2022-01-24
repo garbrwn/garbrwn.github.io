@@ -1,0 +1,20 @@
+.unicorn-header {
+    font-weight: bold;
+}
+
+.post-card-container
+{
+    border-style: solid;
+    border-color: rgb(212, 212, 212);
+    border-width: 1px;
+    border-radius: 2px;
+    padding:  20px;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 15px;
+}
+
+.post-card-head
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}

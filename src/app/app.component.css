@@ -2,3 +2,12 @@
     width: 80%;
     background-color: red;
 }
+
+
+.mat-button, 
+.mat-flat-button, 
+.mat-icon-button, 
+.mat-stroked-button { 
+  border-radius: 0px;
+  stroke-width: 0px;
+}

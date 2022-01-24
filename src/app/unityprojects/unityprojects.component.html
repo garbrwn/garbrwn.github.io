@@ -1,6 +1,8 @@
 <div id="wrap">
-
     <div id="content">
-    Here are some words
+        <app-post-card *ngFor="let post of Posts" [titleText]="post.titleText" content="{{post.postContent}}">
+           </app-post-card> 
+           
+            
     </div>
 </div>

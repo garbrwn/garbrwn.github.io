@@ -1,4 +1,33 @@
 <mat-toolbar>
+
+ 
+  <button mat-button [matMenuTriggerFor]="menu">
+    
+    <mat-icon>menu</mat-icon>
+  </button>
+
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/">
+      <!--<mat-icon>home</mat-icon>-->
+      <span>Home</span>
+    </button>
+    <button mat-menu-item routerLink="/unity">
+      
+      <span>Unity</span>
+    </button>
+    <button mat-menu-item routerLink="/blender">
+      
+      <span>Blender</span>
+    </button>
+
+    <button mat-menu-item routerLink="/procedural">
+      
+      <span>Procedural</span>
+    </button>
+  </mat-menu>
+  
+
   <span>garbrwn.github.io</span>
 </mat-toolbar>
 
