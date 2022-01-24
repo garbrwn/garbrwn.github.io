@@ -42,8 +42,8 @@ export class UnityplanetsComponent implements OnInit {
         mobileWarning.style.display = "none";
       }, 5000);
     } else {
-      canvas.style.width = "600px";
-      canvas.style.height = "400px";
+      canvas.style.width = "300px";
+      canvas.style.height = "300px";
     }
     loadingBar.style.display = "block";
 
