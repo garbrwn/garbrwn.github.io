@@ -1,23 +1,56 @@
-body {
+
+html, body {
+  margin: 0;
+  padding: 0;
   font-family: system-ui, sans-serif;
-  margin: 20px;
   background: #f7f7f7;
+  color: #303030;
 }
 
 nav {
-  margin-bottom: 20px;
+  margin-top: 0px;
   background: #f5da64;
+  padding: 12px 20px;
 }
 
-nav a {
+a {
   margin-right: 10px;
   text-decoration: none;
-  color: #0066cc;
+  color: #303030;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+
+.layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.block{
+	width: 400px;
+	padding: 20px;
+        margin-left: 20px;
+        margin-right: 0px;
+}
+
+.gridblock{
+	width: 800px;
+	padding: 20px;
+        margin-left: 20px;
+        margin-right: 0px;
+  caret-color: transparent;
 }
 
 svg {
   background: white;
   border: 1px solid #ccc;
+  width: 500px;
+height: 500px;
+caret-color: transparent;
 }
 
 .controls button {
